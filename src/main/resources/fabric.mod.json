@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "farmers",
+	"version": "${version}",
+	"name": "Farmers!",
+	"description": "A mod about good ol' farming. Lots of crops, food, and tools!",
+	"authors": [
+		"@eltxd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/farmers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.eltxd.farmers.Farmers"
+		],
+		"fabric-datagen": [
+			"com.eltxd.farmers.FarmersDataGenerator"
+		],
+		"client": [
+			"com.eltxd.farmers.FarmersClient"
+		]
+	},
+	"mixins": [
+		"farmers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "farmers:block/palm_sugar_ore"
+  }
+}

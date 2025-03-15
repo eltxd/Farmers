@@ -1,0 +1,11 @@
+{
+  "item.farmers.palm_sugar": "Palm Sugar",
+  "item.farmers.raw_palm_sugar": "Raw Palm Sugar",
+
+  "block.farmers.coconut_tree_log": "Coconut Tree Log",
+  "block.farmers.palm_sugar_ore": "Palm Sugar Ore",
+  "block.farmers.palm_sugar_block": "Palm Sugar Block",
+
+  "itemgroup.farmers.farmers_ingredients": "Farmers Ingredients",
+  "itemgroup.farmers.farmers_blocks": "Farmers Blocks"
+}

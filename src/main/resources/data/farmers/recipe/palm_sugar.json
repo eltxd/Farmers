@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "farmers:palm_sugar_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "farmers:palm_sugar"
+  }
+}
