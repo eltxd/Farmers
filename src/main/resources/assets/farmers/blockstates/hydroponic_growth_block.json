@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farmers:block/hydroponic_growth_block"
+    }
+  }
+}

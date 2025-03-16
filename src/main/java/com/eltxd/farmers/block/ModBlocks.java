@@ -1,6 +1,7 @@
 package com.eltxd.farmers.block;
 
 import com.eltxd.farmers.Farmers;
+import com.eltxd.farmers.block.custom.HydroponicGrowthBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -22,6 +23,8 @@ public class ModBlocks {
     public static final Block PALM_SUGAR_BLOCK = registerBlock("palm_sugar_block",
             new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.SLIME)));
 
+    public static final Block HYDROPONIC_GROWTH_BLOCK = registerBlock("hydroponic_growth_block",
+            new HydroponicGrowthBlock(AbstractBlock.Settings.create()));
 
     public static final Block PALM_SUGAR_ORE = registerBlock("palm_sugar_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
@@ -44,6 +47,10 @@ public class ModBlocks {
             fabricItemGroupEntries.add(PALM_SUGAR_ORE);
             fabricItemGroupEntries.add(PALM_SUGAR_BLOCK);
 
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(HYDROPONIC_GROWTH_BLOCK);
         });
     }
 }

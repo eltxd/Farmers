@@ -2,7 +2,6 @@ package com.eltxd.farmers.item;
 
 import com.eltxd.farmers.Farmers;
 import com.eltxd.farmers.block.ModBlocks;
-import com.eltxd.farmers.item.custom.ChemicalFertilizer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -33,6 +32,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PALM_SUGAR_ORE);
                         entries.add(ModBlocks.PALM_SUGAR_BLOCK);
 
+                    }).build());
+
+    public static final ItemGroup FARMERS_GADGETS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Farmers.MOD_ID, "farmers_gadgets"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.HYDROPONIC_GROWTH_BLOCK))
+                    .displayName(Text.translatable("itemgroup.farmers.farmers_gadgets"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.HYDROPONIC_GROWTH_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
