@@ -1,6 +1,7 @@
 package com.eltxd.farmers.item;
 
 import com.eltxd.farmers.Farmers;
+import com.eltxd.farmers.item.custom.ChemicalFertilizer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -12,6 +13,8 @@ public class ModItems {
 
     public static final Item PALM_SUGAR = registerItem("palm_sugar", new Item(new Item.Settings()));
     public static final Item RAW_PALM_SUGAR = registerItem("raw_palm_sugar", new Item(new Item.Settings()));
+    public static final Item CHEMICAL_FERTILIZER = registerItem("chemical_fertilizer", new ChemicalFertilizer(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Farmers.MOD_ID, name), item);
@@ -23,6 +26,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(PALM_SUGAR);
             fabricItemGroupEntries.add(RAW_PALM_SUGAR);
+            fabricItemGroupEntries.add(CHEMICAL_FERTILIZER);
         });
     }
 }

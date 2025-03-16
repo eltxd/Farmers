@@ -2,6 +2,7 @@ package com.eltxd.farmers.item;
 
 import com.eltxd.farmers.Farmers;
 import com.eltxd.farmers.block.ModBlocks;
+import com.eltxd.farmers.item.custom.ChemicalFertilizer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PALM_SUGAR);
                         entries.add(ModItems.RAW_PALM_SUGAR);
+                        entries.add(ModItems.CHEMICAL_FERTILIZER);
 
                     }).build());
 
