@@ -29,6 +29,7 @@ public class ChemicalFertilizer extends Item {
             int maxAge = cropBlock.getMaxAge();
 
             if (currentAge < maxAge) {
+                if (isValidCropblock(blockState.getProperties()))
                 int newAge = Math.min(currentAge + 7, maxAge); // Ensure it does not exceed max age
                 world.setBlockState(blockPos, blockState.with(CropBlock.AGE, newAge), 2);
 

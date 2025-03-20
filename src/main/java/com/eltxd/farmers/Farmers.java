@@ -5,6 +5,7 @@ import com.eltxd.farmers.item.ModItemGroups;
 import com.eltxd.farmers.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,5 +19,7 @@ public class Farmers implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.STRAW_BALE, 1200);
 	}
 }

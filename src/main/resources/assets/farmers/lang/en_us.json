@@ -2,6 +2,9 @@
   "item.farmers.palm_sugar": "Palm Sugar",
   "item.farmers.raw_palm_sugar": "Raw Palm Sugar",
   "item.farmers.chemical_fertilizer": "Chemical Fertilizer",
+  "item.farmers.sickle": "Sickle",
+  "item.farmers.berry_pie": "Berry Pie",
+  "item.farmers.straw_bale": "Straw Bale",
 
   "block.farmers.coconut_tree_log": "Coconut Tree Log",
   "block.farmers.palm_sugar_ore": "Palm Sugar Ore",
@@ -9,5 +12,13 @@
   "block.farmers.hydroponic_growth_block": "Hydroponic Growth Block",
 
   "itemgroup.farmers.farmers_ingredients": "Farmers Ingredients",
-  "itemgroup.farmers.farmers_blocks": "Farmers Blocks"
+  "itemgroup.farmers.farmers_blocks": "Farmers Blocks",
+  "itemgroup.farmers.farmers_tools": "Farmers Tools",
+  "itemgroup.farmers.farmers_foods": "Farmers Foods",
+  "itemgroup.farmers.farmers_fuels": "Farmers Fuels",
+
+  "tooltip.farmers.sickle.tooltip": "This tool will harvest crops by right-clicking! §eSHIFT§r for more info!",
+  "tooltip.farmers.sickle_shift1.tooltip": "Use this item on a crop to harvest them.",
+  "tooltip.farmers.sickle_shift2.tooltip": "Put a seed in the offhand, it will automatically replant!"
+
 }

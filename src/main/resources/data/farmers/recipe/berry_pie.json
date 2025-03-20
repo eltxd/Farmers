@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:sweet_berries"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    }
+
+  },
+  "pattern": [
+    "EEE",
+    "BMB",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmers:berry_pie"
+  }
+}

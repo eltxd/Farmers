@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_PALM_SUGAR);
                         entries.add(ModItems.CHEMICAL_FERTILIZER);
 
+
                     }).build());
 
     public static final ItemGroup FARMERS_BLOCKS = Registry.register(Registries.ITEM_GROUP,
@@ -40,6 +41,35 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.farmers.farmers_gadgets"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.HYDROPONIC_GROWTH_BLOCK);
+
+                    }).build());
+
+
+    public static final ItemGroup FARMERS_TOOLS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Farmers.MOD_ID, "farmers_tools"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SICKLE))
+                    .displayName(Text.translatable("itemgroup.farmers.farmers_tools"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.SICKLE);
+
+                    }).build());
+
+    public static final ItemGroup FARMERS_FOODS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Farmers.MOD_ID, "farmers_foods"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.BERRY_PIE))
+                    .displayName(Text.translatable("itemgroup.farmers.farmers_foods"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BERRY_PIE);
+
+                    }).build());
+
+    public static final ItemGroup FARMERS_FUELS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Farmers.MOD_ID, "farmers_fuels"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STRAW_BALE))
+                    .displayName(Text.translatable("itemgroup.farmers.farmers_fuels"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.STRAW_BALE);
+
                     }).build());
 
     public static void registerItemGroups() {
